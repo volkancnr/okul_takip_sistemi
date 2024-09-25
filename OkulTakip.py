@@ -336,10 +336,7 @@ def okul_goster(frame):
     tk.Button(frame, text="Okul Sil", command=lambda: okullar_sil(tree),background='#073456', foreground='white', font=('Arial', 12)).place(x=630,y=550)
     tk.Button(frame, text="Kontrol Planla", command=lambda: okul_secme(tree),background='#073456', foreground='white', font=('Arial', 12)).place(x=720,y=550)
     frame.grid_rowconfigure(1, weight=1)
-# Product By...
-# ALİ VOLKAN ÇINAR
-# KERİM CAN GÜRLER
-# CAN BALAMİR
+
 def okul_sil(tree):
     secilen_okul = tree.selection()[0]
     values = tree.item(secilen_okul, "values")
@@ -576,10 +573,7 @@ def gidilecek_okullar_pencere(frame):
     # Görünmesi gereken sütunlar
     columns = ("TARİH", "İLÇE", "OKUL/KURUM ADI")
     tree = ttk.Treeview(frame, columns=("Görev ID", "Okul ID") + columns, show="headings")
-# Product By...
-# ALİ VOLKAN ÇINAR
-# KERİM CAN GÜRLER
-# CAN BALAMİR
+
     # Gizli sütunlar
     tree.column("Görev ID", width=0, stretch=tk.NO)  # Görev ID gizli
     tree.column("Okul ID", width=0, stretch=tk.NO)   # Okul ID gizli
@@ -721,7 +715,3 @@ gidilecek_okullar_pencere(frame_schools_to_visit)
 
 root.mainloop()
 
-# Product By...
-# ALİ VOLKAN ÇINAR
-# KERİM CAN GÜRLER
-# CAN BALAMİR
